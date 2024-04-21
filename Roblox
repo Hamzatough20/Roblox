@@ -1,1 +1,7 @@
-loadstring(game:HttpGet("UrlHere",true))();
+local args = {
+    [1] = "Kitsune",
+    [2] = "Equip",
+    [3] = "5364028085", -- Your Roblox ID
+}
+
+game:GetService("ReplicatedStorage").Remotes.Input:FireServer(unpack(args))
